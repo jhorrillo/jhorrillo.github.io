@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    color: #333;
+    line-height: 1.7;
+    background-color: #fafafa;
+}
+
+a {
+    color: #8c1515;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation */
+nav {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .site-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+nav .site-name:hover {
+    color: #8c1515;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul a {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+nav ul a:hover,
+nav ul a.active {
+    color: #8c1515;
+}
+
+/* Layout */
+.container {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Header / Hero */
+.hero {
+    padding: 3rem 0 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+    color: #222;
+}
+
+.hero .affiliation {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.hero .bio {
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.hero .bio p {
+    margin-bottom: 1rem;
+}
+
+.hero .contact-links {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.hero .contact-links a {
+    margin-right: 1.5rem;
+}
+
+/* Section styles */
+.section {
+    padding: 1.5rem 0 0.5rem;
+}
+
+.section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: #222;
+    border-bottom: 2px solid #8c1515;
+    padding-bottom: 0.2rem;
+    display: inline-block;
+}
+
+/* Research page */
+.paper {
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid #eee;
+}
+
+.paper:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.paper h3 {
+    font-size: 0.95rem;
+    margin-bottom: 0.15rem;
+    color: #222;
+}
+
+.paper .authors {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 0.1rem;
+}
+
+.paper .venue {
+    font-size: 0.85rem;
+    color: #888;
+    font-style: italic;
+    margin-bottom: 0.2rem;
+}
+
+.paper .links a {
+    font-size: 0.8rem;
+    margin-right: 1rem;
+    font-weight: bold;
+}
+
+.paper .description {
+    font-size: 0.85rem;
+    color: #555;
+    margin-top: 0.3rem;
+}
+
+/* CV page */
+.cv-download {
+    margin-bottom: 2rem;
+}
+
+.cv-download a {
+    display: inline-block;
+    background-color: #8c1515;
+    color: #fff;
+    padding: 0.6rem 1.5rem;
+    border-radius: 3px;
+    font-size: 0.9rem;
+}
+
+.cv-download a:hover {
+    background-color: #6b1010;
+    text-decoration: none;
+}
+
+.cv-embed {
+    width: 100%;
+    height: 800px;
+    border: 1px solid #ddd;
+}
+
+/* Footer */
+footer {
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #999;
+    border-top: 1px solid #eee;
+    margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    nav .container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    nav ul {
+        gap: 1.2rem;
+    }
+
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .cv-embed {
+        height: 500px;
+    }
+}
