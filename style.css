@@ -89,6 +89,14 @@ nav ul a.active {
     margin-bottom: 1.5rem;
 }
 
+.headshot {
+    width: 264px;
+    border-radius: 6px;
+    object-fit: cover;
+    float: left;
+    margin: 0.3rem 1.5rem 0.8rem 0;
+}
+
 .hero .bio {
     font-size: 0.95rem;
     color: #444;
@@ -210,6 +218,13 @@ footer {
 
     nav ul {
         gap: 1.2rem;
+    }
+
+    .headshot {
+        float: none;
+        display: block;
+        width: 180px;
+        margin: 0 auto 1rem;
     }
 
     .hero h1 {
